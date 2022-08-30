@@ -4,7 +4,7 @@ kind: ConsoleLink
 metadata:
   name: application-menu-wwt-platform
 spec:
-  href: 'https://wwt.cpom'
+  href: 'https://wwt.com'
   location: ApplicationMenu
   text: WWT Platform
   applicationMenu:
