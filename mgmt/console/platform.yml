@@ -1,0 +1,12 @@
+---
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: application-menu-wwt-platform
+spec:
+  href: 'https://wwt.cpom'
+  location: ApplicationMenu
+  text: WWT Platform
+  applicationMenu:
+    section: WWT
+    imageURL: https://www.wwt.com/favicon-32x32.png
