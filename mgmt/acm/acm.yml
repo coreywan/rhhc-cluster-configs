@@ -4,6 +4,7 @@ kind: Namespace
 metadata:
   name: acm
   annotations:
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "-1"
   labels:
     argocd.argoproj.io/managed-by: openshift-gitops
@@ -42,4 +43,5 @@ metadata:
   namespace: acm
   annotations:
     argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/hook: PostSync
 spec: {}
