@@ -35,13 +35,13 @@ spec:
   installPlanApproval: Automatic
   name: advanced-cluster-management
 
-# ---
-# apiVersion: operator.open-cluster-management.io/v1
-# kind: MultiClusterHub
-# metadata:
-#   name: multiclusterhub
-#   namespace: acm
-#   annotations:
-#     argocd.argoproj.io/sync-wave: "1"
-#     argocd.argoproj.io/hook: PostSync
-# spec: {}
+---
+apiVersion: operator.open-cluster-management.io/v1
+kind: MultiClusterHub
+metadata:
+  name: multiclusterhub
+  namespace: acm
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/hook: PostSync
+spec: {}
