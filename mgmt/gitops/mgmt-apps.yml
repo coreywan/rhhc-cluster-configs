@@ -1,0 +1,91 @@
+# ---
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: mgmt-configs
+#   namespace: openshift-gitops
+# spec:
+#   destination:
+#     name: ''
+#     namespace: default
+#     server: 'https://kubernetes.default.svc'
+#   source:
+#     path: mgmt/gitops
+#     repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+#     targetRevision: HEAD
+#     directory:
+#       recurse: true
+#   project: default
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mgmt-auth
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: mgmt/auth
+    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mgmt-acm
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: mgmt/acm
+    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mgmt-other
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: mgmt/other
+    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
