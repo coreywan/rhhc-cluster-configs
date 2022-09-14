@@ -66,6 +66,8 @@ spec:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - Validate=false
 
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -89,3 +91,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
