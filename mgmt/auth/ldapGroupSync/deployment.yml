@@ -90,7 +90,7 @@ metadata:
   name: ldap-group-syncer
   namespace: ldap-sync
 spec:                                                                                
-  schedule: "*/30 * * * *"                                                           
+  schedule: "*/5 * * * *"                                                           
   concurrencyPolicy: Forbid
   jobTemplate:
     spec:
