@@ -54,6 +54,11 @@ spec:
         operator: NotIn
         values:
           - "false"
+
+      - key: local-cluster
+        operator: NotIn
+        values:
+          - "true"
   clusterConditions: []
 ---
 apiVersion: policy.open-cluster-management.io/v1
