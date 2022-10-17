@@ -127,7 +127,7 @@ spec:
     namespace: ansible-automation-platform
     server: 'https://kubernetes.default.svc'
   source:
-    path: mgmt/aap
+    path: mgmt/rhhc-acm
     repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
