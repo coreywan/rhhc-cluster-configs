@@ -1,4 +1,5 @@
 # Create Policies to enforce GitOps to be installed on all clusters for ACM Management
+# it no deploy right now.. not sure why.
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: Policy
@@ -31,17 +32,15 @@ spec:
                 apiVersion: operators.coreos.com/v1alpha1
                 kind: Subscription
                 metadata:
-                  name: openshift-gitops-installed
+                  name: openshift-gitops-operator
                   namespace: openshift-operators
-                  labels:
-                    operators.coreos.com/openshift-gitops-operator.openshift-operators: ""
                 spec:
-                  name: openshift-gitops-installed
+                  name: openshift-gitops-operator
                   channel: stable
                   installPlanApproval: Automatic
                   source: redhat-operators
                   sourceNamespace: openshift-marketplace
-                  startingCSV: openshift-gitops-installed
+                  
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
