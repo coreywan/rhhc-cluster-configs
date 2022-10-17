@@ -120,7 +120,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: mgmt-rhhc-acm
-  namespace: openshift-gitops
+  namespace: rhhc-acm
 spec:
   destination:
     name: ''
