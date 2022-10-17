@@ -40,7 +40,27 @@ spec:
                   installPlanApproval: Automatic
                   source: redhat-operators
                   sourceNamespace: openshift-marketplace
-                  
+            - complianceType: musthave
+              objectDefinition:
+                apiVersion: argoproj.io/v1alpha1
+                kind: Application
+                metadata:
+                  name: rhhc-common
+                  namespace: openshift-gitops
+                spec:
+                  destination:
+                    namespace: default
+                    server: https://kubernetes.default.svc
+                  project: default
+                  source:
+                    path: common
+                    repoURL: https://github.com/coreywan/rhhc-cluster-configs
+                    targetRevision: HEAD
+                    directory:
+                      recurse: true
+                  syncPolicy:
+                    automated:
+                      selfHeal: true
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
