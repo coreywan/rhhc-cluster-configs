@@ -82,6 +82,8 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
   name: openshift-gitops-installed-placement
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 placementRef:
   name: openshift-gitops-installed-placement
   apiGroup: apps.open-cluster-management.io
