@@ -7,6 +7,7 @@ metadata:
   name: openshift-gitops-installed
   annotations:
     policy.open-cluster-management.io/categories: Common Configurations
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 spec:
   disabled: false
   remediationAction: enforce
@@ -82,8 +83,6 @@ apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
 metadata:
   name: openshift-gitops-installed-placement
-  annotations:
-    argocd.argoproj.io/compare-options: IgnoreExtraneous
 placementRef:
   name: openshift-gitops-installed-placement
   apiGroup: apps.open-cluster-management.io
