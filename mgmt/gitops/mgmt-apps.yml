@@ -11,7 +11,7 @@
 #     server: 'https://kubernetes.default.svc'
 #   source:
 #     path: mgmt/gitops
-#     repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+#     repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
 #     targetRevision: HEAD
 #     directory:
 #       recurse: true
@@ -34,7 +34,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt/auth
-    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
       recurse: true
@@ -57,7 +57,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt/acm
-    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
       recurse: true
@@ -82,7 +82,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt/other
-    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
       recurse: true
@@ -105,7 +105,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt/aap
-    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
       recurse: true
@@ -127,7 +127,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: mgmt/rhhc-acm
-    repoURL: 'https://github.com/coreywan/rhhc-cluster-configs'
+    repoURL: 'http://gitlocal.wwtatc.lab/wwt/rhhc-cluster-configs'
     targetRevision: HEAD
     directory:
       recurse: true
