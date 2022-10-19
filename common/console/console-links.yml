@@ -22,3 +22,16 @@ spec:
   applicationMenu:
     section: WWT
     imageURL: https://www.wwt.com/favicon-32x32.png
+
+---
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: application-menu-lucidchart
+spec:
+  href: 'https://lucid.app/lucidchart/82bf1dc4-e23f-4aca-9480-abefce36ab1e/edit?viewport_loc=12%2C-191%2C1811%2C1596%2C0_0&invitationId=inv_def93d60-0667-409e-b449-cd3634976383'
+  location: ApplicationMenu
+  text: Lucid Chart
+  applicationMenu:
+    section: WWT RHHC
+    imageURL: https://www.wwt.com/favicon-32x32.png
