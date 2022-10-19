@@ -22,3 +22,15 @@ spec:
   applicationMenu:
     section: WWT RHHC
     imageURL: https://www.wwt.com/favicon-32x32.png
+---
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: application-menu-wwt-atc-red-hat
+spec:
+  href: 'https://www.wwt.com/service/atc/partners?tagIds=5702'
+  location: ApplicationMenu
+  text: Red Hat in the ATC
+  applicationMenu:
+    section: WWT
+    imageURL: https://www.wwt.com/favicon-32x32.png
